@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaşar Kemal | Anadolu'nun Destansı Sesi</title>
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Özel CSS dosyamız --><link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Merriweather (Başlıklar için) ve Open Sans (Metinler için) --><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+        }
+        /* Özel renkler ve gölgeler için Tailwind config */
+        .gradient-bg-header {
+            background: linear-gradient(135deg, #1f2937, #4b5563); /* Koyu gri gradient */
+        }
+        .text-gradient-primary {
+            background: linear-gradient(to right, #fca311, #ffbf00); /* Turuncu-sarı gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-secondary {
+            background: linear-gradient(to right, #ef4444, #dc2626); /* Kırmızı gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 leading-relaxed">
+
+    <!-- Header Section --><header class="gradient-bg-header py-16 md:py-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://source.unsplash.com/random/1600x900/?literature,library,book');"></div>
+        <div class="relative z-10 container mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in text-gradient-primary">Yaşar Kemal</h1>
+            <p class="text-xl md:text-2xl text-gray-300 animate-slide-up">Anadolu'nun Vicdanı, Edebiyatın Başkaldırısı</p>
+            <nav class="mt-8">
+                <ul class="flex justify-center space-x-6 md:space-x-10 text-lg">
+                    <li><a href="#hakkinda" class="hover:text-yellow-400 transition duration-300">Hakkında</a></li>
+                    <li><a href="#eserleri" class="hover:text-yellow-400 transition duration-300">Eserleri</a></li>
+                    <li><a href="#galeri" class="hover:text-yellow-400 transition duration-300">Galeri</a></li>
+                    <li><a href="#sozleri" class="hover:text-yellow-400 transition duration-300">Sözleri</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section --><section id="hakkinda" class="py-16 md:py-24 bg-gray-800 relative overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 relative group animate-scale-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ya%C5%9Far_Kemal.jpg" alt="Yaşar Kemal Portresi" class="rounded-xl shadow-2xl transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1 w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/606060/FFF?text=G%C3%B6rsel+Y%C3%BCklenemedi';">
+                <div class="absolute inset-0 bg-yellow-500 opacity-20 rounded-xl mix-blend-multiply transition-opacity duration-500 group-hover:opacity-30"></div>
+                <div class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 text-white px-4 py-2 rounded-lg text-sm md:text-base">
+                    "Ustam Yaşar Kemal"
+                </div>
+            </div>
+            <div class="md:w-1/2 animate-slide-right">
+                <h2 class="text-4xl font-bold mb-6 text-gradient-secondary">Efsanevi Bir Yazarın İzinde</h2>
+                <p class="text-lg mb-4 text-gray-300">
+                    Asıl adı Kemal Sadık Gökçeli olan Yaşar Kemal, Türk edebiyatının en büyük ustalarından biridir. Çukurova'nın o bereketli topraklarından beslenen kalemi, Anadolu'nun çığlığını, yoksulluğunu, isyanını ve insanının destansı direnişini dünyaya duyurmuştur.
+                </p>
+                <p class="text-lg mb-4 text-gray-300">
+                    Romanları sadece bir hikaye anlatmakla kalmaz, aynı zamanda bir coğrafyanın, bir kültürün ve bir dönemin canlı portresini çizer. O, doğayı, insanı ve toplumsal adaletsizlikleri eşsiz bir dille harmanlayarak edebiyata yeni bir soluk getirmiştir.
+                </p>
+                <a href="https://tr.wikipedia.org/wiki/Ya%C5%9Far_Kemal" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 mt-4 shadow-lg hover:shadow-xl">
+                    Daha Fazla Bilgi Edinin <span class="ml-2">&#8594;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section --><section id="eserleri" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gradient-primary">Başlıca Eserleri</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Eser Kartı 1 - İnce Memed --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up">
+                    <img src="https://cdn1.dokuzsoft.com/u/incikitap/img/c/i/n/ince-memed-1c4a299efa114b195325521ced969583f.jpg" alt="İnce Memed Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">İnce Memed</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">Ağalık düzenine başkaldıran efsanevi bir eşkıyanın, İnce Memed'in destansı hikayesi.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+
+                <!-- Eser Kartı 2 --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-100">
+                    <img src="https://static.nadirkitap.com/fotograf/1987078/37/Kitap_2024061512134319870787.jpg" alt="Yer Demir Gök Bakır Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Yer Demir Gök Bakır</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">Yoksulluk ve çaresizlik içindeki bir köyün, insanüstü bir kahraman yaratarak umut buluşu.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+
+                <!-- Eser Kartı 3 --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-200">
+                    <img src="https://m.media-amazon.com/images/I/41-9c60e0HL.jpg" alt="Binboğalar Efsanesi Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Binboğalar Efsanesi</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">Göçebe yaşamdan yerleşikliğe geçmek zorunda kalan Yörüklerin trajik hikayesi.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+
+                <!-- Eser Kartı 4 --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-300">
+                    <img src="https://m.media-amazon.com/images/I/41-9c60e0HL.jpg" alt="Ölmez Otu Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Ölmez Otu</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">Toprak ağası zulmüne karşı direnen bir Anadolu köyünün ve kadınlarının hikayesi.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+
+                <!-- Eser Kartı 5 --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-400">
+                    <img src="https://m.media-amazon.com/images/I/41-9c60e0HL.jpg" alt="Teneke Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Teneke</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">Çukurova'ya gönderilen genç, idealist kaymakamın bürokrasiyle mücadelesi.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+
+                <!-- Eser Kartı 6 --><div class="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-500">
+                    <img src="https://m.media-amazon.com/images/I/41-9c60e0HL.jpg" alt="Kuşlar da Gitti Kitap Kapağı" class="w-48 h-64 object-cover rounded-md mb-4 shadow-md border-2 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Kuşlar da Gitti</h3>
+                    <p class="text-gray-400 text-center mb-4 flex-grow">İstanbul'da yaşam mücadelesi veren iki çocuğun dokunaklı hikayesi.</p>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-300 font-medium">İncele &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section --><section id="galeri" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gradient-secondary">Fotoğraf Galerisi</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Yaşar Kemal Fotoğrafı 1 --><div class="relative group cursor-pointer animate-fade-in">
+                    <img src="https://source.unsplash.com/600x400/?turkish-writer,old-man,portrait" alt="Yaşar Kemal 1" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Genç Yaşar Kemal</span>
+                    </div>
+                </div>
+                <!-- Yaşar Kemal Fotoğrafı 2 --><div class="relative group cursor-pointer animate-fade-in delay-100">
+                    <img src="https://source.unsplash.com/600x400/?writer,smoking,thoughtful" alt="Yaşar Kemal 2" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Düşünceli An</span>
+                    </div>
+                </div>
+                <!-- Yaşar Kemal Fotoğrafı 3 --><div class="relative group cursor-pointer animate-fade-in delay-200">
+                    <img src="https://source.unsplash.com/600x400/?book,reading,turkish-literature" alt="Yaşar Kemal 3" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Bir Söyleşiden</span>
+                    </div>
+                </div>
+                <!-- Yaşar Kemal Fotoğrafı 4 --><div class="relative group cursor-pointer animate-fade-in delay-300">
+                    <img src="https://source.unsplash.com/600x400/?old-man,smiling,happy" alt="Yaşar Kemal 4" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Gülümseyen Usta</span>
+                    </div>
+                </div>
+                 <!-- Yaşar Kemal Fotoğrafı 5 --><div class="relative group cursor-pointer animate-fade-in delay-400">
+                    <img src="https://source.unsplash.com/600x400/?village,anatolian,landscape" alt="Çukurova Manzarası" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Çukurova'dan Bir Manzara</span>
+                    </div>
+                </div>
+                <!-- Yaşar Kemal Fotoğrafı 6 --><div class="relative group cursor-pointer animate-fade-in delay-500">
+                    <img src="https://source.unsplash.com/600x400/?library,old-books,classic-literature" alt="Kitaplar" class="rounded-lg shadow-lg object-cover w-full h-48 md:h-64 transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                        <span class="text-white text-lg font-semibold">Eserlerinin Arasında</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section --><section id="sozleri" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gradient-primary">Akılda Kalan Sözleri</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Söz Kartı 1 --><div class="bg-gray-800 rounded-lg shadow-xl p-8 transform hover:translate-y-[-5px] transition duration-300 animate-slide-left">
+                    <blockquote class="text-xl italic text-gray-300 mb-4">
+                        "İnsan evrende, gökyüzünde, yeryüzünde bir damlacık kan. Bir damlacık kan ama, ne kadar büyük, ne kadar değerli."
+                    </blockquote>
+                    <p class="text-yellow-500 font-semibold text-lg">- Yaşar Kemal</p>
+                </div>
+
+                <!-- Söz Kartı 2 --><div class="bg-gray-800 rounded-lg shadow-xl p-8 transform hover:translate-y-[-5px] transition duration-300 animate-slide-right delay-100">
+                    <blockquote class="text-xl italic text-gray-300 mb-4">
+                        "Bir iyilik yapın, iyiliğinizi gömmeyin. Bir güzellik yapın, güzelliğinizi de gömmeyin. İyilikle güzellik bu dünyayı kurtarır."
+                    </blockquote>
+                    <p class="text-yellow-500 font-semibold text-lg">- Yaşar Kemal</p>
+                </div>
+
+                <!-- Söz Kartı 3 --><div class="bg-gray-800 rounded-lg shadow-xl p-8 transform hover:translate-y-[-5px] transition duration-300 animate-slide-left delay-200">
+                    <blockquote class="text-xl italic text-gray-300 mb-4">
+                        "Zulüm bütün dünyada olduğu gibi Çukurova’da da ağaçlara, toprağa, insanlara yapılıyordu."
+                    </blockquote>
+                    <p class="text-yellow-500 font-semibold text-lg">- Yaşar Kemal</p>
+                </div>
+
+                <!-- Söz Kartı 4 --><div class="bg-gray-800 rounded-lg shadow-xl p-8 transform hover:translate-y-[-5px] transition duration-300 animate-slide-right delay-300">
+                    <blockquote class="text-xl italic text-gray-300 mb-4">
+                        "Denizi seviyorsan dalgaları da seveceksin. Sevmiyorsan kıyıdan uzaklaşma."
+                    </blockquote>
+                    <p class="text-yellow-500 font-semibold text-lg">- Yaşar Kemal</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section --><footer class="bg-gray-900 text-gray-500 py-10 text-center border-t border-gray-700">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 | Yaşar Kemal'in Anısına Saygıyla | Tüm Hakları Saklıdır.</p>
+            <div class="flex justify-center space-x-4 mt-4 text-xl">
+                <a href="#" class="hover:text-yellow-500 transition duration-300">Facebook</a>
+                <a href="#" class="hover:text-yellow-500 transition duration-300">Twitter</a>
+                <a href="#" class="hover:text-yellow-500 transition duration-300">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button --><button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 transform translate-y-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- JavaScript for Animations and Back to Top --><script>
+        // Back to Top Button Logic
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'translate-y-4');
+                backToTopButton.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'translate-y-0');
+                backToTopButton.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-active');
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-in, .animate-fade-in-up, .animate-slide-left, .animate-slide-right, .animate-scale-in').forEach(el => {
+            observer.observe(el);
+        });
+
+         // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
